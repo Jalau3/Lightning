@@ -3,8 +3,8 @@ int y;
 int red;
 int green;
 int blue;
-ArrayList <Integer> xCoord = new ArrayList <Integer>();
-ArrayList <Integer> yCoord = new ArrayList <Integer>();
+ArrayList <Integer> xCoord = new ArrayList <Integer> ();
+ArrayList <Integer> yCoord = new ArrayList <Integer> ();
 int i;
 
 void setup() {
@@ -23,8 +23,8 @@ void draw(){
   stroke(red,green,blue);
   line(xCoord.get(i), yCoord.get(i), xCoord.get(i+1), yCoord.get(i+1));
   if(i == xCoord.size()-2){
-    xCoord = new ArrayList <Integer>();
-    yCoord = new ArrayList <Integer>();
+    xCoord = new ArrayList <Integer> ();
+    yCoord = new ArrayList <Integer> ();
     xCoord.add(0);
     xCoord.add(0);
     yCoord.add(0);
@@ -51,8 +51,8 @@ void mousePressed() {
   green = (int)(Math.random()*255);
   blue = (int)(Math.random()*255);
   //create array
-  xCoord = new ArrayList <Integer>();
-  yCoord = new ArrayList <Integer>();
+  xCoord = new ArrayList <Integer> ();
+  yCoord = new ArrayList <Integer> ();
   //repeat till end of screen
   while(y < 700){
     xCoord.add(x);
