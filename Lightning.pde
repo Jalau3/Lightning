@@ -19,7 +19,7 @@ void setup() {
 void draw(){
   fill(0,0,0,30);
   rect(0,0,500,500);
-  strokeWeight(10);
+  strokeWeight(6);
   stroke(red,green,blue);
   line(xCoord.get(i), yCoord.get(i), xCoord.get(i+1), yCoord.get(i+1));
   if(i == xCoord.size()-2){
